@@ -1,0 +1,5 @@
+--> When we changed the network buffer size from 10 to 20 the client receiving thread running time decreased from
+	42 milliseconds to 4 milliseconds. This is a significant difference and it is because when the size is increased 
+	the buffer is less full often, therefore maximising the time allocated to each thread by the CPU core. For instance, 
+	If the size of the buffer would be 1, the running time would be enormous. Because there is only one space that 
+	can be allocated at a time. In other words, larger the buffer size --> more efficient execution time.
